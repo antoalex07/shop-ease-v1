@@ -2,7 +2,10 @@ import React from 'react'
 
 const Private = () => {
   return (
-    <div>Private</div>
+    <div className="page">
+      <h2>Members area</h2>
+      <p>This is the private members area</p>
+    </div>
   )
 }
 
