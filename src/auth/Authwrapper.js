@@ -1,8 +1,9 @@
 import React, { createContext, useContext, useState } from 'react'
 import RenderHeader from '../components/structure/header/Header';
+import { RenderMenu, RenderRoutes } from '../components/structure/RenderNavigation';
 
 const AuthContext = createContext();
-export const authData = () => {
+export const AuthData = () => {
     useContext(AuthContext);
 }
 
@@ -26,7 +27,11 @@ const Authwrapper = () => {
 
   return (
     <AuthContext.Provider value={{user, login, logout}}>
-        <RenderHeader/>
+        <>
+          <RenderHeader/>
+          <RenderMenu/>
+          <RenderRoutes/>
+        </>
     </AuthContext.Provider>
   )
 }
