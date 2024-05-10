@@ -3,12 +3,12 @@ import RenderHeader from '../components/structure/header/Header';
 import { RenderMenu, RenderRoutes } from '../components/structure/RenderNavigation';
 
 const AuthContext = createContext();
-export const AuthData = () => {
-    useContext(AuthContext);
-}
+export const AuthData = () => useContext(AuthContext);
+
 
 const Authwrapper = () => {
-  const [user, setUser] = useState({ name: "", isAuthenticated: false });
+
+  const [user, setUser] = useState({ name: "", isAuthenticated: false })
 
   const login = (userName, password) => {
     return new Promise((resolve, reject) =>{
