@@ -1,39 +1,15 @@
-.header {
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  .header h1 {
-    text-align: center;
-    margin-bottom: 0;
-    font-size: 20px;
-  }
-  
-  .header p {
-    text-align: center;
-  }
-  
-  .header .logo {
-    text-align: center;
-  }
-  
-  .header .logo img {
-    cursor: pointer;
-    width: 100px;
-  }
-  
   .menu {
     background-color: #000;
     text-align: center;
     padding: 15px 0;
   }
   
-  .menu .menuItem {
+  .menu .menu-item {
     display: inline-block;
     margin: 0 30px;
   }
   
-  .menu .menuItem a {
+  .menu .menu-item a {
     color: #fff;
     text-decoration: none;
   }
