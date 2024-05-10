@@ -46,7 +46,7 @@ export const RenderMenu = () => {
                     <Link to={"#"} onClick={logout}>Log out</Link>
                 </div>
             ) : (
-                <div>
+                <div className="menu-item">
                     <Link to={"login"}>Log in</Link>
                 </div>
             )}
